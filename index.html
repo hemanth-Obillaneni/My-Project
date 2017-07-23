@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body ng-app="myApp" >
+<div>
+<p><a ng-click="admin()" href="#!adminPortal">Admin Portal</a> </p>
+<p><a ng-click="DoctorLogin()" href="#!DoctorLogin()">Doctor Login</a></p>
+<p><a ng-click="DoctorRegister()" href="#!DoctorRegister()">Doctor Register</a></p>
+<p><a ng-click="PatientLogin()" href="#!PatientLogin()">Patient Login</a></p>
+<p><a ng-click="PatientRegister()" href="#!PatientRegister()">Patient Register</a></p>
+
+</div>
+<div ng-view></div>
+<script src="./js/angular.min.js"></script>
+<script src="./js/angular-route.js"></script>
+<script src="./module/app.js"></script>
+<script src="./config/view_config.js"></script>
+<script src="./controllers/doctorRegisterCntrl.js"></script>
+<script src="./controllers/doctorLoginCntrl.js"></script>
+<script src="./controllers/patientRegisterCntrl.js"></script>
+<script src="./controllers/patientLoginCntrl.js"></script>
+<script src="./controllers/adminCntrl.js"></script>
+</body>
+</html>

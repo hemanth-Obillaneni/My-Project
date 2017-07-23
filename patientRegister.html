@@ -1,0 +1,10 @@
+<div style="text-align:center" class="row">Register<br>
+
+Full name:<input type="text" ng-model="patient.fullName" /><br>
+User name:<input type="text" ng-model="patient.userName" /><br>
+password:<input type="password" ng-model="patient.password" /><br>
+age:<input type="text" ng-model="patient.age" /><br>
+MobileNo:<input type="number" ng-model="patient.mobileNo" ng-minlength="10" ng-maxlength="10"/><br>
+<button ng-disabled="!userName||!password" ng-click="register()">Register</button>
+
+</div>
